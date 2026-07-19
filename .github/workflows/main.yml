@@ -16,8 +16,8 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y python3-pip python3-venv git zip unzip openjdk-17-jdk \
-            autoconf libtool pkg-config zlib1g-dev libncurses-dev cmake libffi-dev libssl-dev
-
+            autoconf libtool libltdl-dev pkg-config zlib1g-dev libncurses-dev cmake libffi-dev libssl-dev
+ 
       - name: 安装 Buildozer
         run: |
           pip install --upgrade pip
