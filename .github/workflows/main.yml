@@ -15,8 +15,10 @@ jobs:
       - name: 安装系统依赖
         run: |
           sudo apt update
-          sudo apt install -y python3-pip python3-venv git zip unzip openjdk-17-jdk \
-            autoconf libtool libltdl-dev pkg-config zlib1g-dev libncurses-dev cmake libffi-dev libssl-dev
+          sudo apt install -y git zip unzip openjdk-17-jdk python3-pip \
+            python3-virtualenv autoconf libtool pkg-config zlib1g-dev \
+            libncurses5-dev libncursesw5-dev libtinfo6 cmake libffi-dev \
+            libssl-dev automake autopoint gettext
  
       - name: 安装 Buildozer
         run: |
