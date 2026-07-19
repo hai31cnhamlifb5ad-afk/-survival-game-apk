@@ -7,7 +7,7 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,ttf,otf,wav,ogg
 
 version = 1.0
-requirements = python3,pygame
+requirements = python3==3.10.12,pygame
 
 # 横屏游戏
 orientation = landscape
